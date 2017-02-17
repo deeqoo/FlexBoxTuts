@@ -30,14 +30,15 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .container {
   display: flex;
   border: 10px solid mistyrose;
-  /*align-items: center -  need hight set to work*/
-  align-items: center;
   height: 100vh;
-  flex-direction: column;
+  flex-wrap: wrap;
+  /*aligns elements main axis - horizontal,
+  use flex-wrap and set width and height to work it.*/
+  align-content: center;
+  /*aligns elements across axis - vertical*/
+  justify-content: center;
 }
 
-.box1 {-size: 30px;}
-.box3 { font-size: 150px;}
-.box4 { font-size: 200px;}
-.box5 {font-size: 10px;}
-.box10 {font-size: 77px;}
+.box {
+  width: 33.333%;
+}
